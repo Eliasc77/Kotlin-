@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.fragments.AccountFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imgUser"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_weight="0"
+                android:background="@drawable/bonitasprings"
+                android:elevation="10dp"
+                android:padding="5dp"
+                app:shapeAppearanceOverlay="@style/circular"
+                app:strokeColor="@color/grey_font"
+                app:strokeWidth="3dp" />
+
+            <ImageButton
+                android:id="@+id/btnEdit"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@null"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:scaleType="fitXY"
+                android:padding="5dp"
+                android:src="@drawable/edit"
+                android:translationX="-98dp"
+                android:translationY="120dp" />
+
+
+            <ImageButton
+                android:id="@+id/btnLogOut"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@null"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:padding="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/shutdown"
+                android:translationX="198dp"
+                android:translationY="-10dp" />
+        </RelativeLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout8"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:endIconMode="clear_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:startIconDrawable="@drawable/ic_account">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtnombres"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Nombres" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout7"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:endIconMode="clear_text"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayout8"
+                app:startIconDrawable="@drawable/ic_account">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtapellido"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Apellidos" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout9"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:endIconMode="clear_text"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayout7"
+                app:startIconDrawable="@drawable/ic_dni">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtdni"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="DNI" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout6"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:endIconMode="clear_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayout9"
+                app:startIconDrawable="@drawable/ic_email">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtemail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout3"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Distrito :"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayout6"
+                app:startIconDrawable="@drawable/ic_location">
+
+                <AutoCompleteTextView
+                    android:id="@+id/autoCompleteTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:inputType="none"
+                    android:text="LA VICTORIA" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:startIconDrawable="@drawable/location"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:endIconMode="clear_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayout3">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtdireccion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Direccion" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout5"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:endIconMode="clear_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayout4"
+                app:startIconDrawable="@drawable/ic_phone">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txttelephone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Telefono" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Guardar"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="@color/turquesa"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayout5"
+                tools:layout_editor_absoluteX="20dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+</ScrollView>

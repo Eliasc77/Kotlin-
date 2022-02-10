@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">AInterdent</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_account">My Account</string>
+    <string name="title_order">My Order</string>
+    <string name="title_car">My Car</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
