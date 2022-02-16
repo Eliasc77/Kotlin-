@@ -1,5 +1,5 @@
 # KotlinShop
-#Ecommerce en construccion, utilizando mvvm, corrutinas y retrofit.
+#Ecommerce en construccion utilizando mvvm, corrutinas y retrofit.
 
 [![Screenshot-1644982096.png](https://i.postimg.cc/ZR6RzBkH/Screenshot-1644982096.png)](https://postimg.cc/njcZvLh9)
 [![Screenshot-1644982105.png](https://i.postimg.cc/5y1t44bV/Screenshot-1644982105.png)](https://postimg.cc/jwgTvrDg)
